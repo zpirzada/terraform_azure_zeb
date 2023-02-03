@@ -90,7 +90,7 @@ resource "azurerm_windows_virtual_machine" "main" {
     location = azurerm_resource_group.main.location
     size = "Standard_B1s"
     admin_username = "user.pirzada"
-    admin_password = "Z@ib1234" 
+    admin_password = "Z@ib12345" 
 
     network_interface_ids = [
         azurerm_network_interface.internal.id
