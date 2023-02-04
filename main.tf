@@ -110,5 +110,6 @@ resource "azurerm_windows_virtual_machine" "main" {
 }
 
 output "public_ip" {
-        value = azurerm_public_ip.main.id
+        //value = azurerm_public_ip.main.id
+        value = azurerm_network_interface.internal.ip_configuration[0].public_ip_address_id
 }
